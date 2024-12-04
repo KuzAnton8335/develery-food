@@ -1,0 +1,11 @@
+/* banner */
+@media (max-width: 991px) {
+  .banner-item__title {
+    max-width: 100%;
+  }
+
+  .banner-item__subtitle {
+    max-width: 100%;
+  }
+}
+/* /banner */

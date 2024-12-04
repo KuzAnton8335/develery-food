@@ -4,35 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/normalaiz.css">
+    <link rel="stylesheet" href="./styles/rootstyles.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>Delevery Food</title>
+    <!-- fonts -->
+    <link rel="preload" href="./fonts/roboto-v32-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/roboto-v32-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
+    <!-- /fonts -->
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-box">
-                <a href="#" class="header-logo logo">
-                    <img src="./img/img-logo.png" alt="Delevery food">
-                </a>
-                <div class="header-controls">buttons</div>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-box">
+                    <a href="#" class="header-logo logo">
+                        <img src="./img/img-logo.png" alt="Delevery food">
+                    </a>
+                    <div class="header-controls">
+                        <button class="btn btn-primery">
+                            <img src="./img/icons/user.svg" alt="user">
+                            Войти
+                        </button>
+                        <button class="btn btn-outline">
+                            <img src="./img/icons/cart.svg" alt="cart">
+                            Корзина
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">main</div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-box">
-                <a href="#" class="footer-logo logo">
-                    <img src="./img/img-logo.png" alt="Delevery food">
-                </a>
-                <div class="footer-nav">nav</div>
-                <div class="footer-social">social</div>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-item">
+                        <h2 class="banner-item__title">Онлайн-сервис доставки еды на&nbsp;дом</h2>
+                        <p class="banner-item__subtitle">Блюда из&nbsp;любимого ресторана привезет курьер
+                            в&nbsp;перчатках, маске и&nbsp;с&nbsp;антисептиком</p>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="products-header">
+                        <h3 class="products-header__title">Рестораны</h3>
+                        <input type="text" class="products-header__search" placeholder="Поиск блюд и ресторанов">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- /main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box">
+                    <a href="#" class="footer-logo logo">
+                        <img src="./img/img-logo.png" alt="Delevery food">
+                    </a>
+                    <nav class="footer-nav">
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-list__link">Ресторанам</a></li>
+                            <li><a href="#" class="nav-list__link">Курьерам</a></li>
+                            <li> <a href="#" class="nav-list__link">Пресс-центр</a> </li>
+                            <li> <a href="#" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="./img/icons/instragramm.svg" alt="instragramm">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icons/vk.svg" alt="vkontacte">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
 </body>
 
 </html>
