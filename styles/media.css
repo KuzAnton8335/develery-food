@@ -1,11 +1,24 @@
 /* banner */
 @media (max-width: 991px) {
+  .banner-item {
+    background-image: none;
+  }
   .banner-item__title {
     max-width: 100%;
   }
 
   .banner-item__subtitle {
     max-width: 100%;
+  }
+
+  .products-card__item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-card__item {
+    width: 100%;
   }
 }
 /* /banner */
