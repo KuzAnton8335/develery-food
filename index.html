@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="./styles/media.css">
   <title>Delevery Food</title>
   <!-- fonts -->
-  <link rel="preload" href="./fonts/roboto-v32-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
-  <link rel="preload" href="./fonts/roboto-v32-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="../fonts/roboto-v32-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="../fonts/roboto-v32-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
   <!-- /fonts -->
+  <script defer src="./js/modal.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
               <img src="./img/icons/user.svg" alt="user">
               Войти
             </button>
-            <button class="btn btn-outline">
+            <button class="btn btn-outline" id="cart-button">
               <img src="./img/icons/cart.svg" alt="cart">
               Корзина
             </button>
@@ -54,7 +55,7 @@
             <input type="text" class="products-header__search" placeholder="Поиск блюд и ресторанов">
           </div>
           <div class="products-wrapper">
-            <div class="products-card">
+            <div class="products-card" id="rest-container">
               <a href="./goods.html" class="products-card__item">
                 <div class="products-card__image">
                   <img src="./img/rests/products-img-1.jpg" alt="Пицца плюс">
