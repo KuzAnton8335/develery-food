@@ -27,7 +27,7 @@
           <router-link
             :to="`/rest?id=${rest.id}`"
             class="products-card__item"
-            v-for="rest in restArray"
+            v-for="rest in store.rests"
             :key="rest.id"
           >
             <div class="products-card__image">
@@ -68,7 +68,8 @@
 </template>
 
 <script setup>
-import { restArray } from "../constanst/rests";
+// import { restArray } from "../constanst/rests";
+import { store } from "../store/index";
 const getUrl = name => {
   return new URL(`../assets/img/rests/${name}`, import.meta.url);
 };
